@@ -222,7 +222,7 @@ const takeScreenshot = () => {
   html2canvas(iframeBody, {
     useCORS: true,
     logging: true,
-    proxy: "https://your-proxy-server.com/proxy"
+    proxy: "https://cors-anywhere.herokuapp.com/"
   }).then(canvas => {
     console.log("Canvas generated:", canvas);
     setTimeout(() => { 
