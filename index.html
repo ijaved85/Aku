@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Aku Results</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- HTML !-->
+		<div class="container">
+				<p class="headSem">Semester</p>
+			<div class="semester">
+				<div class="semester-item sem1">I</div>
+				<div class="semester-item sem2">II</div>
+				<div class="semester-item sem3">III</div>
+				<div class="semester-item sem4">IV</div>
+				<div class="semester-item sem5">V</div>
+				<div class="semester-item sem6">VI</div>
+				<div class="semester-item sem7">VII</div>
+				<div class="semester-item sem8">VIII</div>
+			</div>
+			<div class="data">
+			  <div id="Search">
+					<p class="headSer">Search By</p>
+				<div class="searchBy">
+					<label class="searchOpt">
+						<input type="radio" class="radio" id="searOpt1" name="opt" />
+						List Name
+					</label>
+					<label class="searchOpt">
+						<input type="radio" class="radio" id="searOpt2" name="opt" />
+						Roll Number
+					</label>
+				</div>
+				</div>
+				<div class="student-table">
+					<table id="student-table">
+						<thead>
+							<tr>
+								<th>Roll Number</th>
+								<th>Name</th>
+								<th>Reg Number</th>
+							</tr>
+						</thead>
+						<tbody id="student-data">
+							<!-- Student data will be populated here -->
+						</tbody>
+					</table>
+					<div class="pagination">
+						<!-- Pagination links will be generated here -->
+					</div>
+				</div>
+				
+				<div class="searchBar">
+					  <p class="headBar">Registration Number :&emsp;221091890</p>
+					<div class="searchInputWrapper">
+						<input
+							class="searchInput"
+							type="number"
+							maxlength="2"
+  pattern="[0-9]{2}"
+							placeholder="Last Two Digits"
+						/>
+						<i class="searchInputIcon fa fa-search"></i>
+					</div>
+				</div>
+				
+				<a href="#mainIframe" id="resultFrame" style="opacity: 0;">link</a>
+					<div id="iframe-container"></div>
+					
+			</div>
+			<div class="noData">
+				<h1 class="semMess">Exam Not Conducted!</h1>
+			</div>
+			<div class="download">download</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
